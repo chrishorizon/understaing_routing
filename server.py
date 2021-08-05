@@ -13,12 +13,14 @@ def dojo():
 def hi_user(user):
     print(user)
     return "Hi " + user + "!"
+    # return f"Hi {name.capitalize()}!"
 
 @app.route('/repeat/<int:number>/<string:word>')
 def multiply(number, word):
     print(number)
     print(word)
     return word * number
+    #return f"{word * number}"
 
 if __name__ == '__main__':
     app.run(debug=True)
